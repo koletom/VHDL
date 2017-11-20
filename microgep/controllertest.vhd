@@ -27,7 +27,7 @@ controllermap:controller port map(lclk,lrst,lOUTData);
 process
 begin
 	lrst<='0';
-	for idx in 0 to 500 loop
+	for idx in 0 to 1500 loop
  		lclk <= '1';
 		OUTData <= lOUTData;
 		wait for 10 ps;

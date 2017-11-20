@@ -12,7 +12,6 @@ entity ROM is
 end entity;
 
 architecture BEH of ROM is	
-	signal romData: LINEType;
 	signal lcode: std_logic_vector(MEMBitsWidth-1 DOWNTO 0):=(others=>'0');
 	signal lnumber: std_logic_vector(MEMBitsWidth*2-1 DOWNTO 0):=(others=>'0');
 begin	
